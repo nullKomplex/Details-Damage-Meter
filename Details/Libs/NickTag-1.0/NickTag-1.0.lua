@@ -1,3 +1,6 @@
+local _, Private = ...
+setfenv(1, Private.compatEnv)
+
 --> Library NickTag is a small library for share individual nicknames and avatars.
 
 --> Basic Functions:
@@ -6,7 +9,7 @@
 
 -- 14: added support for chinese and russian
 
-local major, minor = "NickTag-1.0", 14
+local major, minor = "NickTag-1.0", 15
 local NickTag, oldminor = LibStub:NewLibrary (major, minor)
 
 if (not NickTag) then

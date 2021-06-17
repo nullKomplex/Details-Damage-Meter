@@ -1,3 +1,6 @@
+local _, Private = ...
+setfenv(1, Private.compatEnv)
+
 --- **AceTimer-3.0** provides a central facility for registering timers.
 -- AceTimer supports one-shot timers and repeating timers. All timers are stored in an efficient
 -- data structure that allows easy dispatching and fast rescheduling. Timers can be registered
@@ -16,8 +19,7 @@
 -- @class file
 -- @name AceTimer-3.0
 -- @release $Id: AceTimer-3.0.lua 1202 2019-05-15 23:11:22Z nevcairiel $
-
-local MAJOR, MINOR = "AceTimer-3.0", 17 -- Bump minor on changes
+local MAJOR, MINOR = "AceTimer-3.0", 18 -- Bump minor on changes
 local AceTimer, oldminor = LibStub:NewLibrary(MAJOR, MINOR)
 
 if not AceTimer then return end -- No upgrade needed

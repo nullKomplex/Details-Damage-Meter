@@ -4319,9 +4319,9 @@ end
 	}
 
 	local C_RestrictedSubFunctions = {
-		["C_GuildInfo"] = {
+		--[[ ["C_GuildInfo"] = {
 			["RemoveFromGuild"] = true,
-		},
+		},]]--
 	}
 
 	--not in use, can't find a way to check within the environment handle

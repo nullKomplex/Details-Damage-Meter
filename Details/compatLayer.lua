@@ -1,5 +1,6 @@
 local _, Private = ...
 
+-- C_Timer
 local C_Timer = {}
 do
 	local setmetatable = setmetatable
@@ -96,6 +97,13 @@ do
 	end
 end
 
+--C_ChatInfo
+local C_ChatInfo = {}
+do
+    C_ChatInfo.RegisterAddonMessagePrefix = RegisterAddonMessagePrefix
+    C_ChatInfo.SendAddonMessage = SendAddonMessage
+end
+
 local CreateFrameOld = CreateFrame
 local CreateFrame = function(...)
     local tempTable = {...}
@@ -111,6 +119,7 @@ end
 local buildInfo = select(4, GetBuildInfo())
 local compatLayer = {
 	C_Timer = C_Timer,
+    C_ChatInfo = C_ChatInfo,
     CreateFrame = CreateFrame,
 }
 Private.compatLayer = compatLayer

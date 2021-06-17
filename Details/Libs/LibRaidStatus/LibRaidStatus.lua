@@ -1,6 +1,8 @@
+local _, Private = ...
+setfenv(1, Private.compatEnv)
 
 local major = "LibRaidStatus-1.0"
-local CONST_LIB_VERSION = 16
+local CONST_LIB_VERSION = 17
 LIB_RAID_STATUS_CAN_LOAD = false
 
 --declae the library within the LibStub

@@ -1,3 +1,5 @@
+local _, Private = ...
+setfenv(1, Private.compatEnv)
 
 local DF = _G ["DetailsFramework"]
 if (not DF or not DetailsFrameworkCanLoad) then

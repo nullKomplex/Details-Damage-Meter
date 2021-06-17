@@ -1,3 +1,8 @@
+--[[ For copy-paste purposes:
+local _, Private = ...
+setfenv(1, Private.compatEnv)
+]]
+
 local _, Private = ...
 
 -- C_Timer
@@ -104,14 +109,33 @@ do
     C_ChatInfo.SendAddonMessage = SendAddonMessage
 end
 
+local dvalue, oldprint = 1, print
+local print = function(...)
+    local temp = {...}
+    C_Timer.After(5, function() oldprint(("DEBUG (%d)"):format(dvalue), unpack(temp)) dvalue = dvalue + 1 end)
+    
+end
+
+local newTemplates = {
+    "BackdropTemplate",
+    "TooltipBackdropTemplate",
+}
+
 local CreateFrameOld = CreateFrame
 local CreateFrame = function(...)
     local tempTable = {...}
     if type(tempTable[4]) == "string" then
         local str = tempTable[4]
-        str:gsub(",BackdropTemplate", "")
-        str:gsub("BackdropTemplate,", "")
-        if str == "BackdropTemplate" then tempTable[4] = nil else tempTable[4] = str end
+        for _, v in pairs(newTemplates) do
+            str:gsub("," .. v, "")
+            str:gsub(v .. ",", "")
+            if str == v then
+                tempTable[4] = nil
+                break
+            else
+                tempTable[4] = str
+            end
+        end
     end
     return CreateFrameOld(unpack(tempTable))
 end

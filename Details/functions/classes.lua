@@ -1,3 +1,5 @@
+setfenv(1, _detalhes.compatEnv)
+
 --[[ Declare all Details classes and container indexes ]]
 
 do 

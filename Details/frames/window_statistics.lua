@@ -1,4 +1,4 @@
-
+setfenv(1, _detalhes.compatEnv)
 
 --todo: need to fix this file after pre-patch
 

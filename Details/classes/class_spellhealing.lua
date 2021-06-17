@@ -1,3 +1,5 @@
+setfenv(1, _detalhes.compatEnv)
+
 -- heal ability file
 
 	local _detalhes = 		_G._detalhes

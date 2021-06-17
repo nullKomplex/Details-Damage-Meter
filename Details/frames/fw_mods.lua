@@ -1,3 +1,4 @@
+setfenv(1, _detalhes.compatEnv)
 
 local cstr = tostring
 local _string_len = string.len

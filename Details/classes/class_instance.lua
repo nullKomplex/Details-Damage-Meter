@@ -1,3 +1,5 @@
+setfenv(1, _detalhes.compatEnv)
+
 local AceLocale = LibStub ("AceLocale-3.0")
 local Loc = AceLocale:GetLocale ( "Details" )
 local SharedMedia = LibStub:GetLibrary("LibSharedMedia-3.0")

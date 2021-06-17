@@ -1,3 +1,5 @@
+setfenv(1, _detalhes.compatEnv)
+
 -- API list to be visualized ingame
 -- you may access .txt APIs in the Details! root folder
 

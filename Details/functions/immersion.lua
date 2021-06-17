@@ -1,3 +1,4 @@
+setfenv(1, _detalhes.compatEnv)
 
 --Immersion enables players that isn't in your group to show on the damage meter window
 

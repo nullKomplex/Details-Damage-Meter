@@ -1,3 +1,4 @@
+setfenv(1, _detalhes.compatEnv)
 
 do 
 

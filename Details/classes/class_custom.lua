@@ -1,3 +1,5 @@
+setfenv(1, _detalhes.compatEnv)
+
 --> customized display script
 
 	local _detalhes = 		_G._detalhes

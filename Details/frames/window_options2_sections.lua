@@ -1,3 +1,5 @@
+setfenv(1, _detalhes.compatEnv)
+
 if (true) then
     --return
 end

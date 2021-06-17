@@ -1,3 +1,5 @@
+setfenv(1, _detalhes.compatEnv)
+
 local Details = _G.Details
 local DF = _G.DetailsFramework
 local C_Timer = _G.C_Timer

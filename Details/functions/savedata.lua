@@ -1,3 +1,5 @@
+setfenv(1, _detalhes.compatEnv)
+
 --[[this file save the data when player leave the game]]
 
 local _detalhes = 		_G._detalhes

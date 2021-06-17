@@ -1,4 +1,4 @@
-
+setfenv(1, _detalhes.compatEnv)
 
 --local pointer to details object
 local Details = _G._detalhes

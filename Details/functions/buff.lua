@@ -1,3 +1,5 @@
+setfenv(1, _detalhes.compatEnv)
+
 --File Revision: 1
 --Last Modification: 27/07/2013
 -- Change Log:

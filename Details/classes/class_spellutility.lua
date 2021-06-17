@@ -1,3 +1,5 @@
+setfenv(1, _detalhes.compatEnv)
+
 -- misc ability file
 	local _detalhes = 		_G._detalhes
 	local _

@@ -1,8 +1,11 @@
+local _, Private = ...
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --> global name declaration
 		
 		_ = nil
 		_detalhes = LibStub("AceAddon-3.0"):NewAddon("_detalhes", "AceTimer-3.0", "AceComm-3.0", "AceSerializer-3.0", "NickTag-1.0")
+		_detalhes.compatEnv = Private.compatEnv
+		setfenv(1, _detalhes.compatEnv)
 		
 		local version, build, date, tocversion = GetBuildInfo()
 

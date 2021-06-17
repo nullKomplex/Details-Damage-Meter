@@ -1,4 +1,4 @@
-
+setfenv(1, _detalhes.compatEnv)
 
 -- @windowN: number a a window to open the player details breakdown
 -- /run Details:OpenPlayerDetails(windowN)

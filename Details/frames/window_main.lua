@@ -1,3 +1,4 @@
+setfenv(1, _detalhes.compatEnv)
 
 --note: this file need a major clean up especially on function creation.
 

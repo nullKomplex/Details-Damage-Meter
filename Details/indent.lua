@@ -1,3 +1,5 @@
+setfenv(1, _detalhes.compatEnv)
+
 -- For All Indents And Purposes
 local revision = 21
 -- Maintainer: kristofer.karlsson@gmail.com

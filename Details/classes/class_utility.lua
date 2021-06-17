@@ -1,3 +1,5 @@
+setfenv(1, _detalhes.compatEnv)
+
 --lua locals
 local _cstr = string.format
 local _math_floor = math.floor

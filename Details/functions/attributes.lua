@@ -1,3 +1,5 @@
+setfenv(1, _detalhes.compatEnv)
+
 --[[ Attributes: Damage, Heal, Energy, Miscellaneous ]]
 
 do 

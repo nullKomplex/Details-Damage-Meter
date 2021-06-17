@@ -1,3 +1,5 @@
+setfenv(1, _detalhes.compatEnv)
+
 --> custom window
 
 	local _detalhes = 		_G._detalhes

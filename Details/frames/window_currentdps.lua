@@ -1,4 +1,4 @@
-
+setfenv(1, _detalhes.compatEnv)
 
 local Details = _G.Details
 local libwindow = LibStub("LibWindow-1.1")

@@ -1,3 +1,5 @@
+setfenv(1, _detalhes.compatEnv)
+
 -- damage object
 
 	local Details = _G.Details

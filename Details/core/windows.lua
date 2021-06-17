@@ -1,3 +1,4 @@
+setfenv(1, _detalhes.compatEnv)
 
 	local _detalhes =	_G._detalhes
 	local Loc = _G.LibStub("AceLocale-3.0"):GetLocale("Details")

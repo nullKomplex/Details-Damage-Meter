@@ -1,4 +1,4 @@
-
+setfenv(1, _detalhes.compatEnv)
 
 local UnitGroupRolesAssigned = _G.DetailsFramework.UnitGroupRolesAssigned
 local wipe = _G.wipe

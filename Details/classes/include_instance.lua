@@ -1,3 +1,4 @@
+setfenv(1, _detalhes.compatEnv)
 
 --default values for instances (windows)
 --if a new value is added here and it does not exists (nil) in the instance, it'll be copied into it

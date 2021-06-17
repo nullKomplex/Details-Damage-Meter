@@ -1,3 +1,5 @@
+setfenv(1, _detalhes.compatEnv)
+
 local _detalhes = 		_G._detalhes
 local gump = 			_detalhes.gump
 local container_pets =		_detalhes.container_pets

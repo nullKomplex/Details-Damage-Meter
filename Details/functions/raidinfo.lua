@@ -1,4 +1,4 @@
-
+setfenv(1, _detalhes.compatEnv)
 
 --> install data for raiding tiers
 

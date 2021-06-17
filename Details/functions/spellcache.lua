@@ -1,3 +1,5 @@
+setfenv(1, _detalhes.compatEnv)
+
 --[[ Spell Cache store all spells shown on frames and make able to change spells name, icons, etc... ]]
 
 do 
